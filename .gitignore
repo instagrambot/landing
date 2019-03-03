@@ -1,0 +1,18 @@
+node_modules
+npm-debug.log*
+.npm
+.node_repl_history
+logs
+*.log
+pids
+*.pid
+*.seed
+jspm_packages
+
+# Mac stuff
+.DS_Store
+
+# Project Files
+public
+.eslintcache
+.stylelintcache
