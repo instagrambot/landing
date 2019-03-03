@@ -21,6 +21,7 @@ const stylesLoaders = [
     options: {
       minimize: production,
       modules: true,
+      // Rewrite classes
       // localIdentName: production ? '[hash:base64:7]' : '[path]__[local]--[hash:base64:5]',
       localIdentName: production ? '[local]' : '[local]',
     },
