@@ -126,7 +126,7 @@ module.exports = {
   output: {
     path: SETTINGS.PUBLIC_PATH,
     filename: 'bundle.js',
-    publicPath: pagesBuild ? `/${getRepositoryName()}/` : '/',
+    publicPath: pagesBuild ? `/${getRepositoryName()}/` : `/${getRepositoryName()}/`,
   },
 
   resolve: {
