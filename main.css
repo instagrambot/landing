@@ -1,0 +1,140 @@
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px var(--gap-desktop); }
+  @media screen and (max-width: 768px) {
+    .navbar {
+      padding: 10px var(--gap-mobile); } }
+  .navbar .navbar-item + .navbar-item {
+    margin-left: 20px; }
+:root {
+  --color-primary: #4e73df;
+  --color-secondary: #f6c23e;
+  --color-gray: #3a3b45;
+  --color-text: #3a3b45;
+  --color-blue: #4e73df;
+  --color-indigo: #6610f2;
+  --color-purple: #6f42c1;
+  --color-pink: #e83e8c;
+  --color-red: #e74a3b;
+  --color-orange: #fd7e14;
+  --color-yellow: #f6c23e;
+  --color-green: #1cc88a;
+  --color-teal: #20c9a6;
+  --color-cyan: #36b9cc;
+  --gap-desktop: 80px;
+  --gap-mobile: 20px;
+  --gap-section: 70px;
+  --font-family-serif: Nunito;
+  --font-family-sans-serif: Tahoma;
+  --font-family-monospace: Tahoma;
+  --size-larger: 1.6rem;
+  --size-large: 1.4rem;
+  --size-medium: 1.2rem;
+  --size-normal: 1rem;
+  --size-small: 0.9rem;
+  --size-smaller: 0.75rem; }
+
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr {
+  margin: 0;
+  padding: 0; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: normal; }
+
+button,
+input,
+select,
+textarea {
+  margin: 0;
+  font-size: 1rem; }
+
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: white;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  -webkit-text-size-adjust: 100%;
+     -moz-text-size-adjust: 100%;
+      -ms-text-size-adjust: 100%;
+          text-size-adjust: 100%; }
+
+body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  font-size: 16px;
+  color: var(--color-text);
+  font-size: inherit;
+  line-height: 1.6; }
+
+*, *::before, *::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
+
+*:focus {
+  outline: none; }
+
+img,
+audio,
+video {
+  height: auto;
+  max-width: 100%; }
+
+iframe {
+  border: 0; }
+
+article,
+aside,
+figure,
+header,
+hgroup,
+section {
+  display: block; }
+
+body,
+button,
+input,
+select,
+textarea {
+  font-family: var(--font-family-sans-serif); }
+
+img {
+  height: auto;
+  max-width: 100%; }
+
+span {
+  font-style: inherit;
+  font-weight: inherit; }
