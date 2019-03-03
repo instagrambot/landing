@@ -1,16 +1,3 @@
-.navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 10px var(--gap-desktop); }
-  @media screen and (max-width: 768px) {
-    .navbar {
-      padding: 10px var(--gap-mobile); } }
-  .navbar .navbar-item + .navbar-item {
-    margin-left: 20px; }
 :root {
   --color-primary: #4e73df;
   --color-secondary: #f6c23e;
@@ -138,3 +125,16 @@ img {
 span {
   font-style: inherit;
   font-weight: inherit; }
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px var(--gap-desktop); }
+  @media screen and (max-width: 768px) {
+    .navbar {
+      padding: 10px var(--gap-mobile); } }
+  .navbar .navbar-item + .navbar-item {
+    margin-left: 20px; }
