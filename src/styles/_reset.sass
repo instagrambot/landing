@@ -1,0 +1,118 @@
+$body-size:                  16px !default
+$body-rendering:             optimizeLegibility !default
+$body-color:                 color(text) !default
+
+
+// Creating native css variables with Sass variables & functions
+\:root
+  // Colors
+  @each $name, $color in $colors
+    --color-#{$name}: #{$color}
+  // Gaps
+  @each $key, $value in $gaps
+    --gap-#{$key}: #{$value}
+  // Fonts
+  @each $type, $family in $families
+    --font-family-#{$type}: #{$family}
+  // Sizes
+  @each $name, $size in $sizes
+    --size-#{$name}: #{$size}
+
+
+html,
+body,
+p,
+ol,
+ul,
+li,
+dl,
+dt,
+dd,
+blockquote,
+figure,
+fieldset,
+legend,
+textarea,
+pre,
+iframe,
+hr,
+  margin: 0
+  padding: 0
+
+// Headings
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+  font-size: 100%
+  font-weight: normal
+
+// Forms
+button,
+input,
+select,
+textarea
+  margin: 0
+  font-size: 1rem
+
+html
+  box-sizing: border-box
+  background: white
+  -moz-osx-font-smoothing: grayscale
+  -webkit-font-smoothing: antialiased
+  text-rendering: $body-rendering
+  text-size-adjust: 100%
+
+body
+  display: flex
+  flex-direction: column
+  font-size: 16px
+  color: $body-color
+  font-size: inherit
+  line-height: 1.6
+
+*
+  &,
+  &::before,
+  &::after
+    box-sizing: inherit
+
+// Bad thing. I don't like outlines but are great for accessibilty, think to remove this.
+*:focus
+  outline: none
+
+// Media
+img,
+audio,
+video
+  height: auto
+  max-width: 100%
+
+// Iframe
+iframe
+  border: 0
+
+article,
+aside,
+figure,
+header,
+hgroup,
+section
+  display: block
+
+body,
+button,
+input,
+select,
+textarea
+  font-family: family(sans-serif)
+
+img
+  height: auto
+  max-width: 100%
+
+span
+  font-style: inherit
+  font-weight: inherit

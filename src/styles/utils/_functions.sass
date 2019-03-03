@@ -1,0 +1,18 @@
+
+// For development
+=b($color: red)
+  border: 1px solid $color
+
+
+// For CSS Native Variables
+@function color($color-name)
+  @return var(--color-#{$color-name})
+
+@function gap($name)
+  @return var(--gap-#{$name})
+
+@function family($type)
+  @return var(--font-family-#{$type})
+
+@function size($size)
+  @return var(--size-#{$size})

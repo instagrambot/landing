@@ -1,0 +1,44 @@
+
+// NOTE: This is a SCSS file 'cause in SASS we can't indent arrays
+// making this file unreadable.
+// Both this file and "functions" help to create the native css variables used in the project
+
+$colors: (
+  primary: $primary,
+  secondary: $secondary,
+
+  gray: $gray,
+  text: $text,
+
+  blue: $blue,
+  indigo: $indigo,
+  purple: $purple,
+  pink: $pink,
+  red: $red,
+  orange: $orange,
+  yellow: $yellow,
+  green: $green,
+  teal: $teal,
+  cyan: $cyan
+);
+
+$gaps: (
+  desktop: 80px,
+  mobile: 20px,
+  section: 70px,
+);
+
+$families: (
+  serif: "Nunito",
+  sans-serif: "Tahoma",
+  monospace: "Tahoma",
+);
+
+$sizes: (
+  larger: 1.6rem,
+  large: 1.4rem,
+  medium: 1.2rem,
+  normal: 1rem,
+  small: .9rem,
+  smaller: .75rem,
+);

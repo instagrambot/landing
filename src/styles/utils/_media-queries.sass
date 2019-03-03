@@ -1,0 +1,22 @@
+$tablet: 769px !default
+$desktop: 960px !default
+$widescreen: 1152px !default
+$widescreen-enabled: true !default
+$fullhd: 1344px !default
+$fullhd-enabled: true !default
+
+=from($device)
+  @media screen and (min-width: $device)
+    @content
+
+%is-hidden-from-mobile
+  +from($tablet)
+    display: none !important
+
+=mobile
+  @media screen and (max-width: $tablet - 1px)
+    @content
+
+%is-hidden-on-mobile
+  +mobile
+    display: none !important
