@@ -1,9 +1,13 @@
 
 // This file stores all global variables, mixins, placeholders and functions
-// that can be accessed in every Sass file.
-// Don't put any css code here as it is automatically attached to every Sass file.
+// Don't put any css code here as it's automatically attached to any Sass file.
 
+$DEV-MODE: true
+
+@import "utils/dev.sass"
 @import "utils/colors.sass"
 @import "utils/native-vars.scss"
 @import "utils/functions.sass"
+@import "utils/mixins.sass"
+@import "utils/placeholders.sass"
 @import "utils/media-queries.sass"

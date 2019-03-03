@@ -1,9 +1,10 @@
-$body-size:                  16px !default
-$body-rendering:             optimizeLegibility !default
-$body-color:                 color(text) !default
+$body-size: 16px !default
+$body-rendering: optimizeLegibility !default
+$body-color: color(text) !default
 
-
-// Creating native css variables with Sass variables & functions
+// Native css variables ì
+// with Sass variables & functions
+// (see both utils/native-vars & functions)
 \:root
   // Colors
   @each $name, $color in $colors
@@ -18,7 +19,7 @@ $body-color:                 color(text) !default
   @each $name, $size in $sizes
     --size-#{$name}: #{$size}
 
-
+// Reset
 html,
 body,
 p,
@@ -39,7 +40,7 @@ hr,
   margin: 0
   padding: 0
 
-// Headings
+// TODO: mv to Headings
 h1,
 h2,
 h3,
@@ -49,7 +50,7 @@ h6
   font-size: 100%
   font-weight: normal
 
-// Forms
+// TODO: mv to Forms
 button,
 input,
 select,
@@ -57,7 +58,10 @@ textarea
   margin: 0
   font-size: 1rem
 
+
+
 html
+  @extend %height100
   box-sizing: border-box
   background: white
   -moz-osx-font-smoothing: grayscale
@@ -66,6 +70,7 @@ html
   text-size-adjust: 100%
 
 body
+  @extend %height100
   display: flex
   flex-direction: column
   font-size: 16px
@@ -79,7 +84,7 @@ body
   &::after
     box-sizing: inherit
 
-// Bad thing. I don't like outlines but are great for accessibilty, think to remove this.
+// Bad thing. I don't like outlines but are great for accessibilty, think to remove/improve this.
 *:focus
   outline: none
 
@@ -102,12 +107,14 @@ hgroup,
 section
   display: block
 
+// All elements with sans-serif family
 body,
 button,
 input,
 select,
 textarea
   font-family: family(sans-serif)
+
 
 img
   height: auto

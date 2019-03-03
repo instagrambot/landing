@@ -1,17 +1,16 @@
 import React, {Component} from 'react'
 import { Link } from 'react-router-dom'
 
-import Navbar from '../components/Navbar.jsx'
+import Layout from '../layout'
+import HomeHeader from '../components/Home/HomeHeader.jsx'
 
 class Home extends Component {
 
   render() {
     return (
-      <div id={'home'}>
-        <Navbar />
-
-        Test Home
-      </div>
+      <Layout>
+        <HomeHeader />
+      </Layout>
     );
   }
 }
