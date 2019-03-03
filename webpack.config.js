@@ -21,7 +21,7 @@ const stylesLoaders = [
     options: {
       minimize: production,
       modules: true,
-      // Rewrite classes
+      // Rewrite
       // localIdentName: production ? '[hash:base64:7]' : '[path]__[local]--[hash:base64:5]',
       localIdentName: production ? '[local]' : '[local]',
     },
@@ -126,7 +126,7 @@ module.exports = {
   output: {
     path: SETTINGS.PUBLIC_PATH,
     filename: 'bundle.js',
-    publicPath: pagesBuild ? `/${getRepositoryName()}/` : `/${getRepositoryName()}/`,
+    publicPath: production ? `/${getRepositoryName()}/` : '/',
   },
 
   resolve: {
