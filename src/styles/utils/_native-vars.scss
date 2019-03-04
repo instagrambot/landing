@@ -3,35 +3,43 @@
 // making this file unreadable.
 // Both this file and "functions" help to create the native css variables used in the project.
 
+// $colors: (
+  // gray: $gray,
+  // blue: $blue,
+  // indigo: $indigo,
+  // purple: $purple,
+  // pink: $pink,
+  // red: $red,
+  // orange: $orange,
+  // yellow: $yellow,
+  // green: $green,
+  // teal: $teal,
+  // cyan: $cyan
+// );
+
 $colors: (
   primary: $primary,
+  primary-lighter: lighten($primary, 3%),
   secondary: $secondary,
 
-  gray: $gray,
-  text: $text,
+  info: $info,
+  success: $success,
+  warning: $warning,
+  danger: $danger,
 
-  blue: $blue,
-  indigo: $indigo,
-  purple: $purple,
-  pink: $pink,
-  red: $red,
-  orange: $orange,
-  yellow: $yellow,
-  green: $green,
-  teal: $teal,
-  cyan: $cyan
+  text: $text
 );
 
 $gaps: (
-  desktop: 100px,
+  desktop: 150px,
   mobile: 20px,
   section: 70px,
 );
 
 $families: (
   serif: 'Nunito',
-  sans-serif: 'Tahoma',
-  monospace: 'Tahoma',
+  sans-serif: 'Nunito',
+  monospace: 'Nunito',
 );
 
 $sizes: (
