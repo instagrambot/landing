@@ -6,8 +6,35 @@
     flex-direction: column
 
   display: flex
-  justify-content: center
+  flex-direction: column
+  justify-content: space-between
   align-items: center
   flex: 0 0 auto
 
-  min-height: 50vh
+  padding: gap(section) gap(desktop) 10px gap(desktop)
+  // background: color()
+
+  &__menu
+    display: flex
+    justify-content: space-between
+    align-items: center
+
+    width: 100%
+    height: 100%
+  ul
+    list-style: none
+    margin: 0
+    li
+      a
+        font-size: size(small)
+
+  &__heading
+    @extend %uppercase
+    font-weight: 800
+    font-size: size(smaller)
+
+
+
+  &__copyright
+    font-size: size(smaller)
+    margin-top: 100px
