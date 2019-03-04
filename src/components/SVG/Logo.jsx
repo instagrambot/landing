@@ -4,7 +4,7 @@ class Logo extends Component {
 
   render() {
     return (
-      <div>Test Logo</div>
+      <img className={this.props.className} src={"https://raw.githubusercontent.com/instagrambot/web/master/client/img/icon.png"} />
     );
   }
 
