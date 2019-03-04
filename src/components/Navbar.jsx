@@ -24,6 +24,7 @@ class Navbar extends Component {
           <Link to={'/'} className={'navbar-item'}>Links</Link>
           {/* <Hamburger/> */}
           {/* <MobileMenu/> */}
+          <Link to={'/'} className={'navbar-item button'}>CTA</Link>
         </div>
 
       </header>

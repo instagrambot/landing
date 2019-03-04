@@ -1,2 +1,17 @@
+$button-background: color(primary)
+$button-background-hover: color(primary-lighter)
+
+
 .button
-  
+  @extend %uppercase
+  font-size: .95rem
+  font-weight: 800
+
+
+  background: $button-background
+  color: white
+  padding: 10px 20px
+  border-radius: $radius-rounded
+
+  &:hover
+    background: $button-background-hover
