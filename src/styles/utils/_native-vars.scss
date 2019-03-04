@@ -30,10 +30,24 @@ $colors: (
   text: $text
 );
 
+$gray-scale: (
+  white: $white,
+  gray-100: $gray-100,
+  gray-200: $gray-200,
+  gray-300: $gray-300,
+  gray-400: $gray-400,
+  gray-500: $gray-500,
+  gray-600: $gray-600,
+  gray-700: $gray-700,
+  gray-800: $gray-800,
+  gray-900: $gray-900,
+  black: $black
+);
+
 $gaps: (
-  desktop: 150px,
+  desktop: 200px,
   mobile: 20px,
-  section: 70px,
+  section: 100px,
 );
 
 $families: (
@@ -47,6 +61,6 @@ $sizes: (
   large: 1.4rem,
   medium: 1.2rem,
   normal: 1rem,
-  small: .9rem,
-  smaller: .75rem,
+  small: .95rem,
+  smaller: .8rem,
 );

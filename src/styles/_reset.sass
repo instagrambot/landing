@@ -9,6 +9,9 @@ $body-color: color(text) !default
   // Colors
   @each $name, $color in $colors
     --color-#{$name}: #{$color}
+  // Gray Scale
+  @each $name, $color in $gray-scale
+    --color-#{$name}: #{$color}
   // Gaps
   @each $key, $value in $gaps
     --gap-#{$key}: #{$value}
@@ -70,14 +73,21 @@ html
   text-rendering: $body-rendering
   text-size-adjust: 100%
 
-body
-  @extend %height100
-  display: flex
-  flex-direction: column
   font-size: $body-size
   color: $body-color
   line-height: 1.6
   font-weight: 600
+
+body
+  @extend %height100
+  display: flex
+  flex-direction: column
+
+  font-size: inherit
+  color: inherit
+  line-height: inherit
+  font-weight: inherit
+
 
 *
   &,

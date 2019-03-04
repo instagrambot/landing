@@ -7,27 +7,30 @@ $navbar-height: 4rem
     padding: 10px gap(mobile)
 
   // Global
-  +position-fixed
+  +position-absolute(0,0,0)
   display: flex
   justify-content: space-between
   align-items: center
 
   line-height: 1
   min-height: $navbar-height
-  padding: 10px gap(desktop)
+  padding: 30px gap(desktop)
 
-  background: white
-
-  box-shadow: 0 2px 10px 0 rgba(0,0,0,.08)
+  // background: white
+  // box-shadow: 0 2px 10px 0 rgba(0,0,0,.08)
 
 
 
   &-logo
-    max-height: 45px
+    max-height: 50px
 
   &-group
 
   .navbar-item+.navbar-item
-    margin-left: 20px
+    margin-left: 30px
 
   &-item
+
+  &-menu
+    a
+      color: color(white)
