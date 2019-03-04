@@ -1,4 +1,4 @@
-$body-size: 16px !default
+$body-size: 19px !default
 $body-rendering: optimizeLegibility !default
 $body-color: color(text) !default
 
@@ -74,10 +74,10 @@ body
   @extend %height100
   display: flex
   flex-direction: column
-  font-size: 16px
+  font-size: $body-size
   color: $body-color
-  font-size: inherit
   line-height: 1.6
+  font-weight: 600
 
 *
   &,
@@ -116,10 +116,6 @@ select,
 textarea
   font-family: family(sans-serif)
 
-
-img
-  height: auto
-  max-width: 100%
 
 span
   font-style: inherit
