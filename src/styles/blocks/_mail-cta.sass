@@ -1,11 +1,11 @@
 .mail-cta
   @extend %bg-gradient-primary
 
-
   display: flex
   flex-direction: column
   justify-content: center
   align-items: center
+  text-align: center
 
   padding: gap(section) gap(desktop)
 
@@ -13,14 +13,16 @@
   +mobile
     justify-content: center
     padding: gap(section-m) gap(mobile)
-    text-align: center
     &__form
       input
         max-width: 300px
 
+
+
+  // Children
   &__title
+    +title(1, white)
     margin-bottom: 50px
-    font-size: size(larger)
 
   &__form
     display: flex
