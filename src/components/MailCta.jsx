@@ -6,7 +6,14 @@ class MailCta extends Component {
   render() {
     return (
       <div className={'mail-cta'}>
-        Newsletter
+        <div className={"mail-cta__title"}>Get the latest updates</div>
+
+        <form className={"mail-cta__form"}>
+          <input
+            placeholder={"Your best mail.."}
+          />
+          <button className={"button btn-secondary"}>Submit</button>
+        </form>
       </div>
     );
   }

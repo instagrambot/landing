@@ -5,6 +5,9 @@ import Layout from '../layout'
 import HomeHeader from '../components/Home/HomeHeader.jsx'
 import RadioSlider from '../components/Home/RadioSlider.jsx'
 
+import MailCta from '../components/MailCta.jsx'
+
+
 class Home extends Component {
 
   render() {
@@ -12,6 +15,9 @@ class Home extends Component {
       <Layout>
         <HomeHeader />
         <RadioSlider />
+
+
+        <MailCta />
       </Layout>
     );
   }

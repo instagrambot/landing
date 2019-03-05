@@ -1,9 +1,39 @@
 .mail-cta
   @extend %bg-gradient-primary
 
+
   display: flex
-  justify-content: space-between
+  flex-direction: column
+  justify-content: center
   align-items: center
 
-
   padding: gap(section) gap(desktop)
+
+  // Responsive
+  +mobile
+    justify-content: center
+    padding: gap(section-m) gap(mobile)
+    text-align: center
+    &__form
+      input
+        max-width: 300px
+
+  &__title
+    margin-bottom: 50px
+    font-size: size(larger)
+
+  &__form
+    display: flex
+    align-items: center
+    input
+      width: 400px
+      padding: 20px
+      border-radius: $radius-rounded
+      color: color(white)
+      background: rgba(255,255,255,.1)
+      &::placeholder
+        color: rgba(255,255,255,.8)
+
+    // BUG: Little space
+    button
+      margin-left: -120px
