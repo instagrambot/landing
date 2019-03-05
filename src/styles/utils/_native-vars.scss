@@ -27,6 +27,8 @@ $colors: (
   warning: $warning,
   danger: $danger,
 
+  light: $light,
+  dark: $dark,
   text: $text
 );
 
@@ -48,6 +50,7 @@ $gaps: (
   desktop: 200px,
   mobile: 20px,
   section: 100px,
+  section-m: 40px,
 );
 
 $families: (
