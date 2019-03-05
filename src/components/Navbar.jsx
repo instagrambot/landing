@@ -6,6 +6,8 @@ import Logo from './SVG/Logo.jsx'
 // import Hamburger from './Hamburger'
 // import MobileMenu from './MobileMenu'
 
+import content from '../../content/navbar.js'
+
 class Navbar extends Component {
 
   render() {
@@ -19,12 +21,14 @@ class Navbar extends Component {
         </div>
 
         <div className={'navbar-group navbar-menu'}>
-          <Link to={'/'} className={'navbar-item'}>Test</Link>
-          <Link to={'/'} className={'navbar-item'}>Menu</Link>
-          <Link to={'/'} className={'navbar-item'}>Links</Link>
-          {/* <Hamburger/> */}
-          {/* <MobileMenu/> */}
-          <Link to={'/'} className={'navbar-item button'}>Call to action</Link>
+          {content.map((link, index) =>
+            <Link
+              key={index}
+              to={link.url}
+              className={'navbar-item ' + link.classes}>
+              {link.text}
+            </Link>
+          )}
         </div>
 
       </header>
