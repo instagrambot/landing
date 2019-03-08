@@ -135,3 +135,7 @@ a
   position: relative
   text-decoration: none
   +underline-hover
+  // Rm underline effect if is button or logo
+  &.button::before,
+  &.navbar-logo::before
+    content: none

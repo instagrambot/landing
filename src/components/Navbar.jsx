@@ -15,8 +15,8 @@ class Navbar extends Component {
       <header className={'navbar'}>
 
         <div className={'navbar-group'}>
-          <Link to={'/'} className={'navbar-item'}>
-            <Logo className={'navbar-logo'}/>
+          <Link to={'/'} className={'navbar-item navbar-logo'}>
+            <Logo />
           </Link>
         </div>
 
