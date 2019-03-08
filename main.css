@@ -4,6 +4,28 @@
 html, body {
   height: 100%; }
 
+a {
+  position: relative;
+  text-decoration: none; }
+  a:before {
+    content: "";
+    border-radius: 27364px;
+    position: absolute;
+    width: 100%;
+    height: 1.2px;
+    bottom: -1px;
+    left: 0;
+    background-color: currentColor;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all .2s ease-in-out 0s;
+    transition: all .2s ease-in-out 0s; }
+  a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); }
+
 :root {
   --color-primary: #4e73df;
   --color-primary-lighter: #5b7de1;
@@ -78,9 +100,6 @@ textarea {
   border: none;
   color: inherit; }
 
-a {
-  text-decoration: none; }
-
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -147,6 +166,115 @@ span {
 .b {
   border: 1px solid red; }
 
+.home-header, .mail-cta {
+  background-color: #4e73df;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #4e73df), to(#224abe));
+  background-image: linear-gradient(180deg, #4e73df 10%, #224abe 100%);
+  background-size: cover;
+  color: rgba(245, 245, 245, 0.9); }
+
+a {
+  position: relative;
+  text-decoration: none; }
+  a:before {
+    content: "";
+    border-radius: 27364px;
+    position: absolute;
+    width: 100%;
+    height: 1.2px;
+    bottom: -1px;
+    left: 0;
+    background-color: currentColor;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all .2s ease-in-out 0s;
+    transition: all .2s ease-in-out 0s; }
+  a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); }
+
+.home-header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 60vh; }
+
+.radio-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: var(--gap-section) var(--gap-mobile); }
+
+.mail-cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: var(--gap-section) var(--gap-desktop); }
+  @media screen and (max-width: 768px) {
+    .mail-cta {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      padding: var(--gap-section-m) var(--gap-mobile); }
+      .mail-cta__form input {
+        max-width: 300px; } }
+  .mail-cta__title {
+    font-size: var(--size-larger);
+    color: var(--color-white);
+    line-height: 1;
+    font-weight: 800;
+    margin-bottom: 50px; }
+  .mail-cta__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .mail-cta__form input {
+      width: 400px;
+      padding: 20px;
+      border-radius: 27364px;
+      color: var(--color-white);
+      background: rgba(255, 255, 255, 0.1); }
+      .mail-cta__form input::-webkit-input-placeholder {
+        color: rgba(255, 255, 255, 0.8); }
+      .mail-cta__form input:-ms-input-placeholder {
+        color: rgba(255, 255, 255, 0.8); }
+      .mail-cta__form input::-ms-input-placeholder {
+        color: rgba(255, 255, 255, 0.8); }
+      .mail-cta__form input::placeholder {
+        color: rgba(255, 255, 255, 0.8); }
+    .mail-cta__form button {
+      margin-left: -120px; }
+.b {
+  border: 1px solid red; }
+
 #app {
   height: 100%; }
 
@@ -157,6 +285,28 @@ span {
 @media screen and (max-width: 768px) {
   .navbar-menu {
     display: none !important; } }
+
+a {
+  position: relative;
+  text-decoration: none; }
+  a:before {
+    content: "";
+    border-radius: 27364px;
+    position: absolute;
+    width: 100%;
+    height: 1.2px;
+    bottom: -1px;
+    left: 0;
+    background-color: currentColor;
+    visibility: hidden;
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all .2s ease-in-out 0s;
+    transition: all .2s ease-in-out 0s; }
+  a:hover:before {
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1); }
 
 .navbar {
   position: absolute;
@@ -184,6 +334,8 @@ span {
     margin-left: 30px; }
   .navbar-menu a {
     color: var(--color-white); }
+    .navbar-menu a.button::before {
+      content: none; }
 
 .button, button {
   font-size: var(--size-small);
@@ -312,90 +464,3 @@ main {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto; }
-.b {
-  border: 1px solid red; }
-
-.home-header, .mail-cta {
-  background-color: #4e73df;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #4e73df), to(#224abe));
-  background-image: linear-gradient(180deg, #4e73df 10%, #224abe 100%);
-  background-size: cover;
-  color: rgba(245, 245, 245, 0.9); }
-
-.home-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 60vh; }
-
-.radio-slider {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: var(--gap-section) var(--gap-mobile); }
-
-.mail-cta {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  padding: var(--gap-section) var(--gap-desktop); }
-  @media screen and (max-width: 768px) {
-    .mail-cta {
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      padding: var(--gap-section-m) var(--gap-mobile); }
-      .mail-cta__form input {
-        max-width: 300px; } }
-  .mail-cta__title {
-    font-size: var(--size-larger);
-    color: var(--color-white);
-    line-height: 1;
-    font-weight: 800;
-    margin-bottom: 50px; }
-  .mail-cta__form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    .mail-cta__form input {
-      width: 400px;
-      padding: 20px;
-      border-radius: 27364px;
-      color: var(--color-white);
-      background: rgba(255, 255, 255, 0.1); }
-      .mail-cta__form input::-webkit-input-placeholder {
-        color: rgba(255, 255, 255, 0.8); }
-      .mail-cta__form input:-ms-input-placeholder {
-        color: rgba(255, 255, 255, 0.8); }
-      .mail-cta__form input::-ms-input-placeholder {
-        color: rgba(255, 255, 255, 0.8); }
-      .mail-cta__form input::placeholder {
-        color: rgba(255, 255, 255, 0.8); }
-    .mail-cta__form button {
-      margin-left: -120px; }
