@@ -3,3 +3,27 @@
   color: color($color)
   line-height: 1
   font-weight: 800
+
+a
+  position: relative
+  text-decoration: none
+  // Hover underline
+  &:before
+    content: ""
+    border-radius: $radius-rounded
+    position: absolute
+    width: 100%
+    height: 1.2px
+    bottom: -1px
+    left: 0
+    background-color: currentColor
+    visibility: hidden
+    -webkit-transform: scaleX(0)
+    transform: scaleX(0)
+    -webkit-transition: all .2s ease-in-out 0s
+    transition: all .2s ease-in-out 0s
+  &:hover
+    &:before
+      visibility: visible
+      -webkit-transform: scaleX(1)
+      transform: scaleX(1)
