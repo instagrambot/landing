@@ -1,8 +1,9 @@
-=title($size: 1, $color: primary)
+=title($size: 1, $color: primary, $mb: 10px, $weight: 800)
   font-size: size(nth(nth($sizes, $size), 1))
   color: color($color)
-  line-height: 1
-  font-weight: 800
+  line-height: 1.2
+  font-weight: $weight
+  margin: 0 0 $mb 0
 
 =underline-hover
   &:before
