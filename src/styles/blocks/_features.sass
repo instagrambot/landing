@@ -1,0 +1,33 @@
+.feature
+  +transition-simple
+  +unselectable
+
+  // Block
+  &s
+    display: grid
+    grid-template-columns: repeat(4, 1fr)
+    grid-gap: 20px
+
+    padding: gap(section) gap(desktop)
+
+  // One Feature
+  display: flex
+  flex-direction: column
+  text-align: left
+
+  box-shadow: 0 8px 20px -5px rgba(0,0,0,.15), 0 -15px 40px -2px rgba(0,0,0,.04)
+  border-radius: 10px
+  padding: 20px 30px 30px
+  &:hover
+    +transition-simple
+    transform: translateY(-10px)
+    box-shadow: 0 12px 20px -5px rgba(0,0,0,.15), 0 -15px 40px -2px rgba(0,0,0,.04)
+
+  svg
+    font-size: size(large)
+    margin-bottom: 5px
+    color: color(secondary)
+  .title
+    +title(3, dark, 10px, 700)
+  .subtitle
+    +title(5, text, 0px, 100)
