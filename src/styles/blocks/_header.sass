@@ -1,0 +1,27 @@
+.header
+  @extend %bg-gradient-primary
+  padding-top: 20vh
+
+  display: flex
+  flex-direction: column
+  align-items: center
+
+  // Temp
+  height: 75vh
+
+  border-radius: 0 0 40% 0
+
+  h1
+    +title(1, white)
+  h2
+    +title(3, white, 25px)
+
+
+.screenshot
+  margin: 0 auto
+  background: white
+  border-radius: 5px
+  box-shadow: 0 5px 100px -2px rgba(0,0,0,.2)
+  width: 900px
+  height: 450px
+  margin-top: -180px
