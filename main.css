@@ -14,7 +14,7 @@ html, body {
   --color-danger: #e74a3b;
   --color-light: whitesmoke;
   --color-dark: #333;
-  --color-text: #3a3b45;
+  --color-text: #6e707e;
   --color-white: #fff;
   --color-gray-100: #f8f9fc;
   --color-gray-200: #eaecf4;
@@ -168,93 +168,6 @@ a {
 .b {
   border: 1px solid red; }
 
-.home-header, .mail-cta {
-  background-color: #4e73df;
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #4e73df), to(#224abe));
-  background-image: linear-gradient(180deg, #4e73df 10%, #224abe 100%);
-  background-size: cover;
-  color: rgba(245, 245, 245, 0.9); }
-
-.home-header {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  height: 60vh; }
-
-.radio-slider {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: var(--gap-section) var(--gap-mobile); }
-
-.mail-cta {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  padding: var(--gap-section) var(--gap-desktop); }
-  @media screen and (max-width: 768px) {
-    .mail-cta {
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      padding: var(--gap-section-m) var(--gap-mobile); }
-      .mail-cta__form input {
-        max-width: 300px; } }
-  .mail-cta__title {
-    font-size: var(--size-larger);
-    color: var(--color-white);
-    line-height: 1;
-    font-weight: 800;
-    margin-bottom: 50px; }
-  .mail-cta__form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    .mail-cta__form input {
-      width: 400px;
-      padding: 20px;
-      border-radius: 27364px;
-      color: var(--color-white);
-      background: rgba(255, 255, 255, 0.1); }
-      .mail-cta__form input::-webkit-input-placeholder {
-        color: rgba(255, 255, 255, 0.8); }
-      .mail-cta__form input:-ms-input-placeholder {
-        color: rgba(255, 255, 255, 0.8); }
-      .mail-cta__form input::-ms-input-placeholder {
-        color: rgba(255, 255, 255, 0.8); }
-      .mail-cta__form input::placeholder {
-        color: rgba(255, 255, 255, 0.8); }
-    .mail-cta__form button {
-      margin-left: -120px; }
-.b {
-  border: 1px solid red; }
-
 #app {
   height: 100%; }
 
@@ -357,10 +270,10 @@ a {
     .button.btn-dark:hover, button.btn-dark:hover {
       background: #4d4d4d; }
   .button.btn-text, button.btn-text {
-    background: #3a3b45;
+    background: #6e707e;
     color: rgba(245, 245, 245, 0.9); }
     .button.btn-text:hover, button.btn-text:hover {
-      background: #515361; }
+      background: #888a97; }
 
 .footer {
   display: -webkit-box;
@@ -420,3 +333,165 @@ main {
   -webkit-box-flex: 1;
       -ms-flex: 1 0 auto;
           flex: 1 0 auto; }
+.b {
+  border: 1px solid red; }
+
+.header, .mail-cta {
+  background-color: #4e73df;
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #4e73df), to(#224abe));
+  background-image: linear-gradient(180deg, #4e73df 10%, #224abe 100%);
+  background-size: cover;
+  color: rgba(245, 245, 245, 0.9); }
+
+.header {
+  padding-top: 20vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 75vh;
+  border-radius: 0 0 40% 0; }
+  .header h1 {
+    font-size: var(--size-larger);
+    color: var(--color-white);
+    line-height: 1.2;
+    font-weight: 800;
+    margin: 0 0 10px 0; }
+  .header h2 {
+    font-size: var(--size-medium);
+    color: var(--color-white);
+    line-height: 1.2;
+    font-weight: 800;
+    margin: 0 0 25px 0; }
+
+.screenshot {
+  margin: 0 auto;
+  background: white;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 5px 100px -2px rgba(0, 0, 0, 0.2);
+          box-shadow: 0 5px 100px -2px rgba(0, 0, 0, 0.2);
+  width: 900px;
+  height: 450px;
+  margin-top: -180px; }
+
+.radio-slider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: var(--gap-section) var(--gap-mobile); }
+
+.mail-cta {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  padding: var(--gap-section) var(--gap-desktop); }
+  @media screen and (max-width: 768px) {
+    .mail-cta {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      padding: var(--gap-section-m) var(--gap-mobile); }
+      .mail-cta__form input {
+        max-width: 300px; } }
+  .mail-cta__title {
+    font-size: var(--size-larger);
+    color: var(--color-white);
+    line-height: 1.2;
+    font-weight: 800;
+    margin: 0 0 10px 0;
+    margin-bottom: 50px; }
+  .mail-cta__form {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+    .mail-cta__form input {
+      width: 400px;
+      padding: 20px;
+      border-radius: 27364px;
+      color: var(--color-white);
+      background: rgba(255, 255, 255, 0.1); }
+      .mail-cta__form input::-webkit-input-placeholder {
+        color: rgba(255, 255, 255, 0.8); }
+      .mail-cta__form input:-ms-input-placeholder {
+        color: rgba(255, 255, 255, 0.8); }
+      .mail-cta__form input::-ms-input-placeholder {
+        color: rgba(255, 255, 255, 0.8); }
+      .mail-cta__form input::placeholder {
+        color: rgba(255, 255, 255, 0.8); }
+    .mail-cta__form button {
+      margin-left: -120px; }
+
+.feature {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+  -webkit-box-shadow: 0 8px 20px -5px rgba(0, 0, 0, 0.15), 0 -15px 40px -2px rgba(0, 0, 0, 0.04);
+          box-shadow: 0 8px 20px -5px rgba(0, 0, 0, 0.15), 0 -15px 40px -2px rgba(0, 0, 0, 0.04);
+  border-radius: 10px;
+  padding: 20px 30px 30px; }
+  .features {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding: var(--gap-section) var(--gap-desktop); }
+  .feature:hover {
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease;
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+    -webkit-box-shadow: 0 12px 20px -5px rgba(0, 0, 0, 0.15), 0 -15px 40px -2px rgba(0, 0, 0, 0.04);
+            box-shadow: 0 12px 20px -5px rgba(0, 0, 0, 0.15), 0 -15px 40px -2px rgba(0, 0, 0, 0.04); }
+  .feature svg {
+    font-size: var(--size-large);
+    margin-bottom: 5px;
+    color: var(--color-secondary); }
+  .feature .title {
+    font-size: var(--size-medium);
+    color: var(--color-dark);
+    line-height: 1.2;
+    font-weight: 700;
+    margin: 0 0 10px 0; }
+  .feature .subtitle {
+    font-size: var(--size-small);
+    color: var(--color-text);
+    line-height: 1.2;
+    font-weight: 100;
+    margin: 0 0 0px 0; }
