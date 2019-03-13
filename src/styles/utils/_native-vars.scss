@@ -3,20 +3,6 @@
 // making this file unreadable.
 // Both this file and "functions" help to create the native css variables used in the project.
 
-// $colors: (
-  // gray: $gray,
-  // blue: $blue,
-  // indigo: $indigo,
-  // purple: $purple,
-  // pink: $pink,
-  // red: $red,
-  // orange: $orange,
-  // yellow: $yellow,
-  // green: $green,
-  // teal: $teal,
-  // cyan: $cyan
-// );
-
 $colors: (
   primary: $primary,
   primary-lighter: lighten($primary, 3%),
@@ -48,7 +34,7 @@ $gray-scale: (
 
 $gaps: (
   desktop: 200px,
-  mobile: 20px,
+  mobile: 25px,
   section: 100px,
   section-m: 40px,
 );

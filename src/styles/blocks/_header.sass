@@ -18,10 +18,12 @@
 
 
 .screenshot
-  margin: 0 auto
   background: white
   border-radius: 5px
   box-shadow: 0 5px 100px -2px rgba(0,0,0,.2)
-  width: 900px
   height: 450px
+  margin: 0 gap(desktop)
   margin-top: -180px
+  +mobile
+    margin: 0 gap(mobile)
+    margin-top: -180px

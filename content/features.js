@@ -12,7 +12,7 @@ module.exports = [
   {
     icon: 'TODO',
     title: 'Scraping',
-    subtitle: 'Easily scrape info like followers/following list'
+    subtitle: 'Easily scrape info like followers / following list'
   },
   {
     icon: 'TODO',
