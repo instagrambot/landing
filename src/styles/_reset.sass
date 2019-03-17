@@ -134,8 +134,12 @@ span
 a
   position: relative
   text-decoration: none
+  color: color(primary)
+  &:visited
+    color: color(secondary)
   +underline-hover
-  // Rm underline effect if is button or logo
+  // Rm underline effect if
   &.button::before,
-  &.navbar-logo::before
+  &.navbar-logo::before,
+  &.social::before
     content: none

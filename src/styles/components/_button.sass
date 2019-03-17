@@ -15,8 +15,11 @@ $button-background-hover: rgba(255,255,255,.2)
   border-radius: $radius-rounded
   cursor: pointer
 
-  &:hover
+  &:hover,
+  &:visited,
+  &:focus
     +transition-simple
+    color: white
     background: $button-background-hover
     box-shadow: 0 4px 15px 0 rgba(0,0,0,.1)
 
@@ -24,7 +27,10 @@ $button-background-hover: rgba(255,255,255,.2)
     &.btn-#{$name}
       background: $color
       color: findColorInvert($color)
-      &:hover
+      &:hover,
+      &:visited,
+      &:focus
+        color: findColorInvert($color)
         background: lighten($color, 10%)
 
 button

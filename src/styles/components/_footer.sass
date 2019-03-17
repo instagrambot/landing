@@ -1,44 +1,37 @@
 .footer
   &-sticky
-    // padding-top: ($navbar-height + 1rem)
     height: 100%
     display: flex
     flex-direction: column
 
   display: flex
-  flex-direction: column
+  flex-direction: row
   justify-content: space-between
   align-items: center
   flex: 0 0 auto
 
-  padding: gap(section) gap(desktop) 10px gap(desktop)
-  // background: color()
+  font-size: size(smaller)
 
-  // Responsive
+  padding: 30px gap(desktop)
+
   +mobile
-    padding: gap(section-m) gap(mobile) 10px gap(mobile)  
+    padding: 20px gap(mobile)
+    flex-direction: column-reverse
+    text-align: center
 
-  &__menu
-    display: flex
-    justify-content: space-between
-    align-items: center
+  &__column
+    svg
+      font-size: size(medium)
 
-    width: 100%
-    height: 100%
   ul
+    // TODO: Fix. Workaround
+    &.nav
+      justify-content: flex-end
+      +mobile
+        justify-content: center
     list-style: none
     margin: 0
-    li
-      a
-        font-size: size(small)
-
-  &__heading
-    @extend %uppercase
-    font-weight: 800
-    font-size: size(smaller)
-
-
-
-  &__copyright
-    font-size: size(smaller)
-    margin-top: 100px
+    display: flex
+    align-items: center
+    li+li
+      margin-left: 15px

@@ -1,64 +1,31 @@
 module.exports = {
-  menu: [
+  copyright: '© 2019 GramUp',
 
-    // First
+  links: [
     {
-      title: 'Title',
-      links: [
-        {
-          url: 'https://google.com',
-          text: 'Link'
-        },
-        {
-          url: 'https://google.com',
-          text: 'Link'
-        },
-        {
-          url: 'https://google.com',
-          text: 'Link'
-        },
-      ],
+      url: '/',
+      text: 'Link'
     },
-
-    // Second
     {
-      title: 'Title',
-      links: [
-        {
-          url: 'https://google.com',
-          text: 'Link'
-        },
-        {
-          url: 'https://google.com',
-          text: 'Link'
-        },
-        {
-          url: 'https://google.com',
-          text: 'Link'
-        },
-      ],
+      url: '/',
+      text: 'Link'
     },
-
-    // Third
     {
-      title: 'Title',
-      links: [
-        {
-          url: 'https://google.com',
-          text: 'Link'
-        },
-        {
-          url: 'https://google.com',
-          text: 'Link'
-        },
-        {
-          url: 'https://google.com',
-          text: 'Link'
-        },
-      ],
+      url: '/',
+      text: 'Link'
+    },
+  ],
+
+
+  legal: [
+    {
+      url: '/',
+      text: 'Cookie Policy'
+    },
+    {
+      url: '/',
+      text: 'Privacy Policy'
     },
 
   ],
-
-  copyright: 'Instaweb..'
 };
