@@ -4,15 +4,15 @@ module.exports = {
   links: [
     {
       url: '/',
-      text: 'Link'
+      text: 'Install'
     },
     {
       url: '/',
-      text: 'Link'
+      text: 'Learn'
     },
     {
       url: '/',
-      text: 'Link'
+      text: 'Contribute'
     },
   ],
 

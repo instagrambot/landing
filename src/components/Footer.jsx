@@ -1,8 +1,7 @@
 import React, {Component} from 'react'
 import { Link } from 'react-router-dom'
 
-import { FaGithub, FaInstagram, FaMedium, FaFacebook } from 'react-icons/fa'
-
+import SocialMediaIcons from './SocialMediaIcons.jsx'
 import content from '../../content/footer.js'
 
 class Footer extends Component {
@@ -27,34 +26,8 @@ class Footer extends Component {
 
         <div className={'footer__column'}>
 
-          {/* Social media */}
-          <ul className={'social-media-icons'}>
-            <li>
-              <Link to={'/'} className={'social --gh'}>
-                <FaGithub />
-              </Link>
-            </li>
-
-            <li>
-              <Link to={'/'} className={'social --ig'}>
-                <FaInstagram />
-              </Link>
-            </li>
-
-            <li>
-              <Link to={'/'} className={'social --md'}>
-                <FaMedium />
-              </Link>
-            </li>
-
-            <li>
-              <Link to={'/'} className={'social --fb'}>
-                <FaFacebook />
-              </Link>
-            </li>
-
-          </ul>
-
+          <SocialMediaIcons />
+          
           {/* Navigation */}
           <ul className={'nav'}>
             {content.links.map((link, index) =>

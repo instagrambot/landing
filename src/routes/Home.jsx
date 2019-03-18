@@ -20,7 +20,7 @@ class Home extends Component {
         <RadioSlider />
 
 
-        <MailCta />
+        {/* <MailCta /> */}
       </Layout>
     );
   }
