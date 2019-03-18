@@ -1,0 +1,149 @@
+=radio-slider-cards($start: 0, $end: 2, $max-width: 500px)
+  +unselectable
+
+  // Native Variables
+  --background: white
+  --padding: 30px
+  --border-radius: 5px
+  --transition: all .2s ease
+  --box-shadow: 0 5px 40px 0 rgba(0,0,0,.15), 0 2px 3px 0 rgba(0, 0, 0, .13)
+
+  --bullets-height: 10px
+  --bullets-margin: 30px auto 0
+
+  @content
+
+  // Hide real radios
+  input
+    display: none
+
+  &__card
+    // Cards wrapper
+    &s
+      position: relative
+      width: 100%
+      max-width: $max-width
+      margin: 0 auto
+      cursor: pointer
+
+    // One card
+    position: absolute
+    top: 0
+    left: 0
+
+    display: flex
+    flex-direction: column
+
+    padding: var(--padding)
+    border-radius: var(--border-radius)
+    background: var(--background)
+    transition: var(--transition)
+
+    box-shadow: var(--box-shadow)
+
+    // Contents
+    &__title
+      +title(3, dark, 10px, 800)
+    &__subtitle
+      +title(4, text, 20px, 400)
+    &__link
+      font-size: size(smaller)
+      width: fit-content
+
+
+
+    @for $slide from $start through $end
+      // &__card--n
+      &--#{$slide}
+        // Within each slider__card--(slide-number) loop through #slide-(number)
+        @for $i from $start through $end
+          @if $i <= $slide - 3
+            // For the slides 3 or more positions on the right
+            // #slide-(number):checked ~ .slider__cards slider__card--(slide-number)
+            #slide-#{$i}:checked ~ .slider__cards &
+              z-index: -1
+              opacity: 0
+              transform: translateX(210px) scale(0.65)
+          @if $i == $slide - 2
+            // For the slide 2 positions on the right
+            // #slide-(number):checked ~ .slider__cards slider__card--(slide-number)
+            #slide-#{$i}:checked ~ .slider__cards &
+              z-index: 0
+              transform: translateX(210px) scale(0.65)
+              @media (max-width: 900px)
+                transform: translateX(170px) scale(0.65)
+              @media (max-width: 768px)
+                opacity: 0
+          @if $i == $slide - 1
+            // For the slide 1 positions on the right
+            // #slide-(number):checked ~ .slider__cards slider__card--(slide-number)
+            #slide-#{$i}:checked ~ .slider__cards &
+              z-index: 1
+              transform: translateX(100px) scale(0.85)
+              @media (max-width: 768px)
+                opacity: 0.6
+          @if $i == $slide
+            // For the slide 1 positions under the active one
+            // #slide-(number):checked ~ .slider__cards slider__card--(slide-number)
+            #slide-#{$i}:checked ~ .slider__cards &
+              position: relative
+              z-index: 2
+              transform: translate(0) scale(1)
+          @if $i == $slide + 1
+            // For the slide 1 positions on the left
+            // #slide-(number):checked ~ .slider__cards slider__card--(slide-number)
+            #slide-#{$i}:checked ~ .slider__cards &
+              z-index: 1
+              transform: translateX(-100px) scale(0.85)
+              @media (max-width: 768px)
+                opacity: 0.6
+          @if $i == $slide + 2
+            // For the slide 2 positions on the left
+            // #slide-(number):checked ~ .slider__cards slider__card--(slide-number)
+            #slide-#{$i}:checked ~ .slider__cards &
+              z-index: 0
+              transform: translateX(-210px) scale(0.65)
+              @media (max-width: 900px)
+                transform: translateX(-170px) scale(0.65)
+              @media (max-width: 768px)
+                opacity: 0
+          @if $i >= $slide + 3
+            // For the slide 3 positions or more on the left
+            // #slide-(number):checked ~ .slider__cards slider__card--(slide-number)
+            #slide-#{$i}:checked ~ .slider__cards &
+              z-index: -1
+              opacity: 0
+              transform: translateX(-210px) scale(0.65)
+
+
+  // Bullets
+  &__bullets
+    z-index: 10
+    display: flex
+    justify-content: center
+    width: auto
+    height: var(--bullets-height)
+    margin: var(--bullets-margin)
+
+    &__item
+      transition: all .5s ease
+
+      width: 10px
+      height: 10px
+      margin: 0 5px
+      border-radius: 1000px
+      background: rgba(0,0,0, 0.2)
+      cursor: pointer
+      &:hover
+        background: white
+
+      // Loops through all the bullet points
+      @for $bullet from $start through $end
+        // .bullets__item--(bullet-number)
+        &--#{$bullet}
+          // #slide-(number):checked ~ .bullets .bullets__item--(bullet-number)
+          #slide-#{$bullet}:checked ~ .slider__bullets &
+            background: white
+
+.slider
+  +radio-slider-cards()
