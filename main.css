@@ -495,7 +495,7 @@ a {
               flex-direction: column-reverse;
       text-align: center; } }
   .footer__column svg {
-    font-size: var(--size-medium); }
+    font-size: var(--size-normal); }
   .footer ul {
     list-style: none;
     margin: 0;
@@ -505,12 +505,12 @@ a {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center; }
-    .footer ul.nav {
+    .footer ul.social-media-icons {
       -webkit-box-pack: end;
           -ms-flex-pack: end;
               justify-content: flex-end; }
       @media screen and (max-width: 768px) {
-        .footer ul.nav {
+        .footer ul.social-media-icons {
           -webkit-box-pack: center;
               -ms-flex-pack: center;
                   justify-content: center; } }
