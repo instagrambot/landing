@@ -171,7 +171,7 @@ a {
 .b {
   border: 1px solid red; }
 
-.header, .mail-cta {
+.header, .radio-slider, .mail-cta {
   background-color: #4e73df;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #4e73df), to(#224abe));
   background-image: linear-gradient(180deg, #4e73df 10%, #224abe 100%);
@@ -228,7 +228,8 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: var(--gap-section) var(--gap-mobile); }
+  padding: var(--gap-section) var(--gap-mobile);
+  border-radius: 20%; }
 
 .mail-cta {
   display: -webkit-box;
@@ -516,6 +517,156 @@ a {
                   justify-content: center; } }
     .footer ul li + li {
       margin-left: 15px; }
+
+.slider {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  --background: white;
+  --padding: 30px;
+  --border-radius: 5px;
+  --transition: all .2s ease;
+  --box-shadow: 0 5px 40px 0 rgba(0,0,0,.15), 0 2px 3px 0 rgba(0, 0, 0, .13);
+  --bullets-height: 10px;
+  --bullets-margin: 30px auto 0; }
+  .slider input {
+    display: none; }
+  .slider__card {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: var(--padding);
+    border-radius: var(--border-radius);
+    background: var(--background);
+    -webkit-transition: var(--transition);
+    transition: var(--transition);
+    -webkit-box-shadow: var(--box-shadow);
+            box-shadow: var(--box-shadow); }
+    .slider__cards {
+      position: relative;
+      width: 100%;
+      max-width: 500px;
+      margin: 0 auto;
+      cursor: pointer; }
+    .slider__card__title {
+      font-size: var(--size-medium);
+      color: var(--color-dark);
+      line-height: 1.2;
+      font-weight: 800;
+      margin: 0 0 10px 0; }
+    .slider__card__subtitle {
+      font-size: var(--size-normal);
+      color: var(--color-text);
+      line-height: 1.2;
+      font-weight: 400;
+      margin: 0 0 20px 0; }
+    .slider__card__link {
+      font-size: var(--size-smaller);
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content; }
+    #slide-0:checked ~ .slider__cards .slider__card--0 {
+      position: relative;
+      z-index: 2;
+      -webkit-transform: translate(0) scale(1);
+              transform: translate(0) scale(1); }
+    #slide-1:checked ~ .slider__cards .slider__card--0 {
+      z-index: 1;
+      -webkit-transform: translateX(-100px) scale(0.85);
+              transform: translateX(-100px) scale(0.85); }
+      @media (max-width: 768px) {
+        #slide-1:checked ~ .slider__cards .slider__card--0 {
+          opacity: 0.6; } }
+    #slide-2:checked ~ .slider__cards .slider__card--0 {
+      z-index: 0;
+      -webkit-transform: translateX(-210px) scale(0.65);
+              transform: translateX(-210px) scale(0.65); }
+      @media (max-width: 900px) {
+        #slide-2:checked ~ .slider__cards .slider__card--0 {
+          -webkit-transform: translateX(-170px) scale(0.65);
+                  transform: translateX(-170px) scale(0.65); } }
+      @media (max-width: 768px) {
+        #slide-2:checked ~ .slider__cards .slider__card--0 {
+          opacity: 0; } }
+    #slide-0:checked ~ .slider__cards .slider__card--1 {
+      z-index: 1;
+      -webkit-transform: translateX(100px) scale(0.85);
+              transform: translateX(100px) scale(0.85); }
+      @media (max-width: 768px) {
+        #slide-0:checked ~ .slider__cards .slider__card--1 {
+          opacity: 0.6; } }
+    #slide-1:checked ~ .slider__cards .slider__card--1 {
+      position: relative;
+      z-index: 2;
+      -webkit-transform: translate(0) scale(1);
+              transform: translate(0) scale(1); }
+    #slide-2:checked ~ .slider__cards .slider__card--1 {
+      z-index: 1;
+      -webkit-transform: translateX(-100px) scale(0.85);
+              transform: translateX(-100px) scale(0.85); }
+      @media (max-width: 768px) {
+        #slide-2:checked ~ .slider__cards .slider__card--1 {
+          opacity: 0.6; } }
+    #slide-0:checked ~ .slider__cards .slider__card--2 {
+      z-index: 0;
+      -webkit-transform: translateX(210px) scale(0.65);
+              transform: translateX(210px) scale(0.65); }
+      @media (max-width: 900px) {
+        #slide-0:checked ~ .slider__cards .slider__card--2 {
+          -webkit-transform: translateX(170px) scale(0.65);
+                  transform: translateX(170px) scale(0.65); } }
+      @media (max-width: 768px) {
+        #slide-0:checked ~ .slider__cards .slider__card--2 {
+          opacity: 0; } }
+    #slide-1:checked ~ .slider__cards .slider__card--2 {
+      z-index: 1;
+      -webkit-transform: translateX(100px) scale(0.85);
+              transform: translateX(100px) scale(0.85); }
+      @media (max-width: 768px) {
+        #slide-1:checked ~ .slider__cards .slider__card--2 {
+          opacity: 0.6; } }
+    #slide-2:checked ~ .slider__cards .slider__card--2 {
+      position: relative;
+      z-index: 2;
+      -webkit-transform: translate(0) scale(1);
+              transform: translate(0) scale(1); }
+  .slider__bullets {
+    z-index: 10;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    width: auto;
+    height: var(--bullets-height);
+    margin: var(--bullets-margin); }
+    .slider__bullets__item {
+      -webkit-transition: all .5s ease;
+      transition: all .5s ease;
+      width: 10px;
+      height: 10px;
+      margin: 0 5px;
+      border-radius: 1000px;
+      background: rgba(0, 0, 0, 0.2);
+      cursor: pointer; }
+      .slider__bullets__item:hover {
+        background: white; }
+      #slide-0:checked ~ .slider__bullets .slider__bullets__item--0 {
+        background: white; }
+      #slide-1:checked ~ .slider__bullets .slider__bullets__item--1 {
+        background: white; }
+      #slide-2:checked ~ .slider__bullets .slider__bullets__item--2 {
+        background: white; }
 
 .social-media-icons .social {
   color: var(--color-text); }
