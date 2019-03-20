@@ -191,7 +191,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   height: 75vh;
-  border-radius: 0 0 40% 0; }
+  border-radius: 0% 0% 30% 0% / 0% 0% 50% 0%; }
   .header h1 {
     font-size: var(--size-larger);
     color: var(--color-white);
@@ -229,7 +229,7 @@ a {
       -ms-flex-align: center;
           align-items: center;
   padding: var(--gap-section) var(--gap-mobile);
-  border-radius: 20%; }
+  border-radius: 50% 50% 50% 50% / 12% 12% 12% 12%; }
 
 .mail-cta {
   display: -webkit-box;
