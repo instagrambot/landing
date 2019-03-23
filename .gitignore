@@ -14,6 +14,7 @@ jspm_packages
 .DS_Store
 
 # Project Files
+start.sh
 public
 .eslintcache
 .stylelintcache
