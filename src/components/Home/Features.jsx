@@ -9,7 +9,7 @@ class Features extends Component {
 
   render() {
     return (
-      <div className={'features'}>
+      <div id={'features'} className={'features'}>
         {content.map((feature, index) =>
           <div key={index} className={"feature"}>
             <div className={"icon"}><FaCheck /></div>
