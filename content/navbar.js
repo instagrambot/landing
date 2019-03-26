@@ -1,21 +1,21 @@
 module.exports = [
   {
-    text: 'Test',
+    text: 'Features',
+    url: '#features',
+    classes: ''
+  },
+  {
+    text: 'Install',
     url: '#',
     classes: ''
   },
   {
-    text: 'Navbar',
-    url: '#',
+    text: 'FAQs',
+    url: '#faqs',
     classes: ''
   },
   {
-    text: 'Links',
-    url: '#',
-    classes: ''
-  },
-  {
-    text: 'Call to action',
+    text: 'Open Dashboard',
     url: '#',
     classes: 'button'
   },

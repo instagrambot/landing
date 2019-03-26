@@ -11,8 +11,8 @@ module.exports = [
   },
   {
     icon: 'TODO',
-    title: 'Scraping',
-    subtitle: 'Easily scrape info like followers / following list'
+    title: 'Download',
+    subtitle: 'Easily download medias or scrape info like followers / following list'
   },
   {
     icon: 'TODO',

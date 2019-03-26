@@ -3,7 +3,7 @@ module.exports = {
   payoff: 'Payoff',
   cta: {
     url: '#',
-    text: 'Call to action',
+    text: 'Get started',
     classes: 'btn-white'
   },
 };
