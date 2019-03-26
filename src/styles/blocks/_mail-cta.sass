@@ -7,7 +7,8 @@
   align-items: center
   text-align: center
 
-  padding: gap(section) gap(desktop)
+  border-radius: 0% 0% 40% 40% / 0% 0% 20% 20%
+  padding: 50px gap(desktop)
 
   // Responsive
   +mobile
@@ -21,21 +22,5 @@
 
   // Children
   &__title
-    +title(1, white)
-    margin-bottom: 50px
-
-  &__form
-    display: flex
-    align-items: center
-    input
-      width: 400px
-      padding: 20px
-      border-radius: $radius-rounded
-      color: color(white)
-      background: rgba(255,255,255,.1)
-      &::placeholder
-        color: rgba(255,255,255,.8)
-
-    // BUG: Little space
-    button
-      margin-left: -120px
+    +title(2, white)
+    margin-bottom: 30px

@@ -7,13 +7,10 @@ class MailCta extends Component {
     return (
       <div className={'mail-cta'}>
         <div className={"mail-cta__title"}>Get the latest updates</div>
-
-        <form className={"mail-cta__form"}>
-          <input
-            placeholder={"Your best mail.."}
-          />
-          <button className={"button btn-secondary"}>Submit</button>
-        </form>
+        <div className={"buttons"}>
+          <Link to={'#'} className={'button'}>Join newsletter</Link>
+          {/* <Link to={'#'} className={'button btn-simple'}>Read stories</Link> */}
+        </div>
       </div>
     );
   }

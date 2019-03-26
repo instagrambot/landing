@@ -3,6 +3,9 @@ $button-background-hover: rgba(255,255,255,.2)
 
 
 .button
+  &+&
+    margin-left: 15px
+
   // @extend %uppercase
   font-size: size(small)
   font-weight: 700
@@ -32,6 +35,11 @@ $button-background-hover: rgba(255,255,255,.2)
       &:focus
         color: findColorInvert($color)
         background: lighten($color, 10%)
+  &.btn-simple
+    background: transparent
+    box-shadow: none
+    &:hover
+      background: $button-background
 
 button
   @extend .button
