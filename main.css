@@ -28,7 +28,7 @@ html, body {
   --color-black: #000;
   --gap-desktop: 200px;
   --gap-mobile: 25px;
-  --gap-section: 100px;
+  --gap-section: 70px;
   --gap-section-m: 40px;
   --font-family-serif: Nunito;
   --font-family-sans-serif: Nunito;
@@ -246,7 +246,8 @@ a {
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  padding: var(--gap-section) var(--gap-desktop); }
+  border-radius: 0% 0% 40% 40% / 0% 0% 20% 20%;
+  padding: 50px var(--gap-desktop); }
   @media screen and (max-width: 768px) {
     .mail-cta {
       -webkit-box-pack: center;
@@ -256,35 +257,12 @@ a {
       .mail-cta__form input {
         max-width: 300px; } }
   .mail-cta__title {
-    font-size: var(--size-larger);
+    font-size: var(--size-large);
     color: var(--color-white);
     line-height: 1.2;
     font-weight: 800;
     margin: 0 0 10px 0;
-    margin-bottom: 50px; }
-  .mail-cta__form {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    .mail-cta__form input {
-      width: 400px;
-      padding: 20px;
-      border-radius: 27364px;
-      color: var(--color-white);
-      background: rgba(255, 255, 255, 0.1); }
-      .mail-cta__form input::-webkit-input-placeholder {
-        color: rgba(255, 255, 255, 0.8); }
-      .mail-cta__form input:-ms-input-placeholder {
-        color: rgba(255, 255, 255, 0.8); }
-      .mail-cta__form input::-ms-input-placeholder {
-        color: rgba(255, 255, 255, 0.8); }
-      .mail-cta__form input::placeholder {
-        color: rgba(255, 255, 255, 0.8); }
-    .mail-cta__form button {
-      margin-left: -120px; }
+    margin-bottom: 30px; }
 
 .feature {
   -webkit-transition: all .5s ease;
@@ -391,6 +369,8 @@ a {
   padding: 10px 20px;
   border-radius: 27364px;
   cursor: pointer; }
+  .button + .button, button + .button, .button + button, button + button {
+    margin-left: 15px; }
   .button:hover, button:hover, .button:visited, button:visited, .button:focus, button:focus {
     -webkit-transition: all .5s ease;
     transition: all .5s ease;
@@ -458,6 +438,12 @@ a {
     .button.btn-text:hover, button.btn-text:hover, .button.btn-text:visited, button.btn-text:visited, .button.btn-text:focus, button.btn-text:focus {
       color: rgba(245, 245, 245, 0.9);
       background: #888a97; }
+  .button.btn-simple, button.btn-simple {
+    background: transparent;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
+    .button.btn-simple:hover, button.btn-simple:hover {
+      background: rgba(255, 255, 255, 0.1); }
 
 .footer {
   display: -webkit-box;
