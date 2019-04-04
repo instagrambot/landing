@@ -1237,6 +1237,9 @@ a {
   .navbar .navbar-item + .navbar-item {
     margin-left: 30px; }
   .navbar-menu a {
+    font-size: .7rem;
+    font-weight: 700;
+    text-transform: uppercase;
     color: var(--color-white); }
 
 .button, button {
