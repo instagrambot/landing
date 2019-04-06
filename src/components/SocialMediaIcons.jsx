@@ -2,10 +2,10 @@ import React, {Component} from "react"
 import { Link } from 'react-router-dom'
 
 import {
-  FaTelegramPlane,
   FaGithub,
-  FaMediumM,
-  FaInstagram
+  FaChrome,
+  FaTelegramPlane,
+  FaMediumM
 } from 'react-icons/fa'
 
 class SocialMediaIcons extends Component {
@@ -14,27 +14,27 @@ class SocialMediaIcons extends Component {
     return (
       <ul className={'social-media-icons'}>
         <li>
-          <Link to={'/'} className={'social --fb'}>
-            <FaTelegramPlane/>
-          </Link>
-        </li>
-
-        <li>
-          <Link to={'/'} className={'social --gh'}>
+          <a href={'https://github.com/instagrambot/'} className={'social --gh'}>
             <FaGithub/>
-          </Link>
+          </a>
         </li>
 
         <li>
-          <Link to={'/'} className={'social --md'}>
+          <a href={'https://chrome.google.com/webstore/detail/gram-up/njonkbhnmmjgancfbncekpgkmidhbbpo'} className={'social --ch'}>
+            <FaChrome/>
+          </a>
+        </li>
+
+        <li>
+          <a href={'https://t.me/instabotproject'} className={'social --fb'}>
+            <FaTelegramPlane/>
+          </a>
+        </li>
+
+        <li>
+          <a href={'/'} className={'social --md'}>
             <FaMediumM/>
-          </Link>
-        </li>
-
-        <li>
-          <Link to={'/'} className={'social --ig'}>
-            <FaInstagram/>
-          </Link>
+          </a>
         </li>
       </ul>
     );

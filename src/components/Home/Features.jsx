@@ -10,13 +10,17 @@ class Features extends Component {
   render() {
     return (
       <div id={'features'} className={'features'}>
-        {content.map((feature, index) =>
-          <div key={index} className={"feature"}>
-            <div className={"icon"}><FaCheck /></div>
-            <div className={"title"}>{feature.title}</div>
-            <div className={"subtitle"}>{feature.subtitle}</div>
-          </div>
-        )}
+        <div className={'features__heading'}>Features</div>
+
+        <div className={'features__grid'}>
+          {content.map((feature, index) =>
+            <div key={index} className={'feature'}>
+              <div className={'icon'}><FaCheck /></div>
+              <div className={'title'}>{feature.title}</div>
+              <div className={'subtitle'}>{feature.subtitle}</div>
+            </div>
+          )}
+        </div>
       </div>
     );
   }

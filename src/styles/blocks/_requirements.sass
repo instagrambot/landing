@@ -1,0 +1,11 @@
+.requirements
+  display: flex
+  justify-content: center
+  align-items: flex-start
+  flex-direction: column
+  padding: gap(section) gap(desktop)
+  +mobile
+    padding: gap(section-m) gap(mobile)
+
+  &__title
+    +title(1)

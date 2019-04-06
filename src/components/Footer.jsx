@@ -21,18 +21,18 @@ class Footer extends Component {
           </ul>
 
           {/* Copyright */}
-          <div className={''}>{content.copyright}</div>
+          <div>{content.copyright}</div>
         </div>
 
         <div className={'footer__column'}>
 
           <SocialMediaIcons />
-          
+
           {/* Navigation */}
           <ul className={'nav'}>
             {content.links.map((link, index) =>
               <li key={index}>
-                <Link to={link.url}>{link.text}</Link>
+                <a href={link.url}>{link.text}</a>
               </li>
             )}
           </ul>

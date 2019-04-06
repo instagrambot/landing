@@ -20,20 +20,20 @@ $colors: (
 
 $gray-scale: (
   white: $white,
-  gray-100: $gray-100,
-  gray-200: $gray-200,
-  gray-300: $gray-300,
-  gray-400: $gray-400,
-  gray-500: $gray-500,
-  gray-600: $gray-600,
-  gray-700: $gray-700,
-  gray-800: $gray-800,
-  gray-900: $gray-900,
+  gray-1: $gray-100,
+  gray-2: $gray-200,
+  gray-3: $gray-300,
+  gray-4: $gray-400,
+  gray-5: $gray-500,
+  gray-6: $gray-600,
+  gray-7: $gray-700,
+  gray-8: $gray-800,
+  gray-9: $gray-900,
   black: $black
 );
 
 $gaps: (
-  desktop: 200px,
+  desktop: 15vw,
   mobile: 25px,
   section: 70px,
   section-m: 40px,
@@ -46,11 +46,11 @@ $families: (
 );
 
 $sizes: (
-  larger: 2.2rem,
-  large: 1.6rem,
-  medium: 1.3rem,
+  larger: 2rem,
+  large: 1.5rem,
+  medium: 1.2rem,
   normal: 1rem,
-  small: .95rem,
+  small: .9rem,
   smaller: .8rem,
 );
 

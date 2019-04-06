@@ -1,9 +1,15 @@
-=title($size: 1, $color: primary, $mb: 10px, $weight: 800)
+=title($size: 1, $color: primary, $mb: 5px, $weight: 800)
   font-size: size(nth(nth($sizes, $size), 1))
   color: color($color)
   line-height: 1.2
   font-weight: $weight
   margin: 0 0 $mb 0
+
+=heading($bg: $primary, $pad: 20px 40px)
+  +unselectable
+  background: rgba($bg, .15)
+  padding: $pad
+  border-radius: 11% 89% 54% 46% / 53% 39% 61% 47%
 
 =underline-hover
   &:before

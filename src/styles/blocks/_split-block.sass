@@ -1,0 +1,34 @@
+.split-block
+  display: grid
+  grid-template-columns: repeat(5, 1fr)
+  grid-gap: 50px
+  padding: 0 gap(desktop)
+  margin-top: gap(section)
+  +mobile
+    text-align: center!important
+    grid-template-columns: repeat(1, 1fr)
+    padding: 0 gap(mobile)
+
+  &__content
+    display: flex
+    flex-direction: column
+    justify-content: center
+    grid-column: span 2 / auto
+    +mobile
+      grid-column: auto
+
+    &__title
+      +title(2, text, 15px)
+    &__subtitle
+      +title(3, gray-5, 40px)
+
+
+  &__img
+    grid-column: span 3 / auto
+    background-image: url(https://gramup.me/images/dashboard.png)
+    background-size: cover
+    background-position: center center
+    height: 350px
+    box-shadow: 0 10px 20px 0 rgba(0,0,0,.2)
+    +mobile
+      grid-column: auto
