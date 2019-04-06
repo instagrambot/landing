@@ -1,9 +1,9 @@
 module.exports = {
-  headline: 'Instagram automation',
-  payoff: 'GramUp is a Chrome extension which helps you to automate the most boring actions',
+  headline: 'Instagram effectively',
+  payoff: 'Automate your social presence, without coding, for free.',
   cta: {
-    url: '#',
-    text: 'Download for Chrome',
-    classes: 'btn-white'
+    url: 'https://chrome.google.com/webstore/detail/gram-up/njonkbhnmmjgancfbncekpgkmidhbbpo',
+    text: 'Install Chrome Extension',
+    classes: 'btn-white btn-medium'
   },
 };

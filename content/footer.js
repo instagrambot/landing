@@ -1,18 +1,18 @@
 module.exports = {
-  copyright: '© 2019 GramUp',
+  copyright: '© 2019 Gram Up!',
 
   links: [
     {
-      url: '/',
-      text: 'Get started'
-    },
-    {
-      url: '/',
+      url: 'https://github.com/instagrambot',
       text: 'Contribute'
     },
     {
-      url: '/',
+      url: 'https://www.paypal.me/okhlopkov/300',
       text: 'Donate'
+    },
+    {
+      url: 'https://morejust.foundation/',
+      text: 'Morejust'
     },
   ],
 
@@ -20,11 +20,11 @@ module.exports = {
   legal: [
     {
       url: '/',
-      text: 'Cookie Policy'
+      text: 'Terms'
     },
     {
       url: '/',
-      text: 'Privacy Policy'
+      text: 'Privacy'
     },
 
   ],

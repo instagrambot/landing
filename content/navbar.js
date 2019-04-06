@@ -5,8 +5,18 @@ module.exports = [
     classes: ''
   },
   {
-    text: 'Install',
-    url: '#',
+    text: 'About',
+    url: '#features',
+    classes: ''
+  },
+  {
+    text: 'Pricing',
+    url: '#features',
+    classes: ''
+  },
+  {
+    text: 'Blog',
+    url: '#features',
     classes: ''
   },
   {
